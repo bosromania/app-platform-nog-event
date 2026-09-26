@@ -1,4 +1,7 @@
-RewriteOptions inherit
 RewriteEngine On
 
-RewriteRule ^ layout.php [END,L]
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+RewriteRule ^([1-3])/?$ layout.php [END,L]

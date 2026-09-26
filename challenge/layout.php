@@ -288,10 +288,10 @@ set_error_handler(function ($e_code, $text, $file, $line) use ($player, $game) {
                 showQR();
             }
         }
-        document.querySelector(".vodca img").src = "/assets/for-j/vodca.jpg"
-        document.querySelector(".bere:last-child img").src = "/assets/for-j/bere.jpg"
-        document.querySelector(".vin img").src = "/assets/for-j/vin.jpg"
         if (game == 'j') {
+            // document.querySelector(".vodca img").src = "/assets/for-j/vodca.jpg"
+            // document.querySelector(".bere:last-child img").src = "/assets/for-j/bere.jpg"
+            // document.querySelector(".vin img").src = "/assets/for-j/vin.jpg"
 
             if (document.querySelector(".vin img") != null) {
                 showQR();
